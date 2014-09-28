@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dip"
+    android:layout_height="wrap_content"
+    android:background="#ffecebeb"
+    android:layout_marginTop="20dip"
+    android:layout_marginBottom="20dip"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/dialog_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/widget_dialog_icon" />
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:contentDescription="标题"
+            android:gravity="center_vertical|left"
+            android:text="标题"
+            android:textColor="#FF333333"
+            android:textSize="20dip" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#FFF3BE22"
+        android:padding="5dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <RadioGroup
+            android:id="@+id/dialog_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dip" >
+        </RadioGroup>
+    </ScrollView>
+
+</LinearLayout>

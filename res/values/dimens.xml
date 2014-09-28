@@ -1,0 +1,13 @@
+<resources>
+
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="list_item_title">20dp</dimen>
+    <dimen name="list_item_content">18dp</dimen>
+    <dimen name="list_item_small_info">16dp</dimen>
+
+    <dimen name="home_padding">5dp</dimen>
+    <dimen name="reg_text_size">18dp</dimen>
+    <dimen name="reg_margin">14dp</dimen>
+</resources>

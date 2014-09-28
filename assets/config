@@ -1,0 +1,6 @@
+create table t_config(
+	id INTEGER PRIMARY KEY ON CONFLICT REPLACE NOT NULL UNIQUE,
+	value varchar(32)
+);
+
+insert into t_config(id,value)values(1002,'1');
