@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.ViewFlipper;
+import android.widget.ViewFlipper; 
 
 public class BannerDemo extends Activity {
 
