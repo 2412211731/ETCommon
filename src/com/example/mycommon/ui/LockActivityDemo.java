@@ -3,7 +3,6 @@ package com.example.mycommon.ui;
 import com.example.mycommon.R;
 import com.example.mycommon.widget.LockView;
 import com.example.mycommon.widget.LockView.OnLockFinishListener;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.Toast;

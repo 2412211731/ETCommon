@@ -15,11 +15,6 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
-/**
- * {@link email:1940125001@qq.com}
- * @author Fay
- * @since 2014/5/23
- */
 public class LockView extends View {
 	private String TAG = "SudokoView";
 	
