@@ -24,8 +24,6 @@ import android.telephony.TelephonyManager;
  * @Description 用户返回客户端SIM卡的一些信息 需要开启 <uses-permission
  *              android:name="android.permission.READ_PHONE_STATE"/>
  * @author 
- * @date 2013-1-10 下午 13:53
- * @version V1.0
  */
 public class SIMCardInfoUtil
 {
@@ -75,7 +73,7 @@ public class SIMCardInfoUtil
 	}
 
 	/**
-	 * 返回手机IMSI号码
+	 * 返回手机卡IMSI号码
 	 * 
 	 * @param context
 	 * @return
@@ -87,5 +85,21 @@ public class SIMCardInfoUtil
 				.getSystemService(Context.TELEPHONY_SERVICE);
 		// 返回唯一的用户ID;就是这张卡的IMSI编号
 		return telephonyManager.getSubscriberId();
+	}
+	
+	
+	/**
+	 * 返回手机IMEI号码
+	 * 
+	 * @param context
+	 * @return
+	 */
+	public static String getIMEI(Context context)
+	{
+		TelephonyManager telephonyManager;
+		telephonyManager = (TelephonyManager) context
+				.getSystemService(Context.TELEPHONY_SERVICE);
+		// 就是手机的IMEI编号
+		return telephonyManager.getDeviceId();
 	}
 }
