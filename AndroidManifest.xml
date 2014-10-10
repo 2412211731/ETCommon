@@ -24,7 +24,7 @@
         android:label="@string/app_name"
         android:theme="@style/Theme.Sherlock.NoActionBar" >
         <activity
-            android:name="com.example.mycommon.ui.LockActivityDemo"
+            android:name="com.example.mycommon.ui.demo.viewpager.MainActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:theme="@style/Theme.Sherlock.NoActionBar" >
@@ -35,6 +35,16 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.mycommon.ui.BasePicCutActivityDemo" >
+        </activity>
+<!--         <activity android:name="com.example.mycommon.ui.demo.viewpager.MainActivity" > -->
+<!--         </activity> -->
+        <activity android:name="com.example.mycommon.ui.demo.viewpager.OneActivity" >
+        </activity>
+        <activity android:name="com.example.mycommon.ui.demo.viewpager.TwoActivity" >
+        </activity>
+        <activity android:name="com.example.mycommon.ui.demo.viewpager.ThreeActivity" >
+        </activity>
+        <activity android:name="com.example.mycommon.ui.demo.viewpager.FourActivity" >
         </activity>
 
         <service android:name="com.example.mycommon.ui.service.SMSService" >

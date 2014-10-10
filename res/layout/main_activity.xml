@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RadioGroup
+        android:id="@+id/footRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/home_menu_bj"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="3dip"
+        android:paddingTop="3dip" >
+
+        <RadioButton
+            android:id="@+id/noDeal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/tab1_blue"
+            android:gravity="center"
+            android:text="通话"
+            android:textColor="@drawable/tab_text_color"
+            android:textSize="@dimen/text_size_14dp" />
+
+        <RadioButton
+            android:id="@+id/haveDeal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/tab2_blue"
+            android:gravity="center"
+            android:text="信息"
+            android:textColor="@drawable/tab_text_color"
+            android:textSize="@dimen/text_size_14dp" />
+
+        <RadioButton
+            android:id="@+id/myinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/tab3_blue"
+            android:gravity="center"
+            android:text="联系人"
+            android:textColor="@drawable/tab_text_color"
+            android:textSize="@dimen/text_size_14dp" />
+
+        <RadioButton
+            android:id="@+id/sort"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/tab4_blue"
+            android:gravity="center"
+            android:text="更多"
+            android:textColor="@drawable/tab_text_color"
+            android:textSize="@dimen/text_size_14dp" />
+    </RadioGroup>
+
+    <!-- <TextView android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:background="@drawable/ic_launcher" -->
+    <!-- android:alpha="0.5" -->
+    <!-- android:text="透明度" -->
+    <!-- android:layout_alignParentBottom="true" -->
+    <!-- android:textColor="#000000"/> -->
+
+</RelativeLayout>
