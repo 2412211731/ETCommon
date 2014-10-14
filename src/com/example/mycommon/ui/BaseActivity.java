@@ -25,7 +25,7 @@ public abstract class BaseActivity extends Activity {
 			}
 		});
 
-		((TextView) findViewById(R.id.title)).setText(getTitle());
+		((TextView) findViewById(R.id.title)).setText(getTitleStr());
 		
 		initView();
 		initListener();
@@ -35,7 +35,7 @@ public abstract class BaseActivity extends Activity {
 
 	public abstract void initView();
 
-	public abstract String getTitle(String title);
+	public abstract String getTitleStr();
 	
 	
 	public <T> void gotoActivity(Context context , Class<T> className){

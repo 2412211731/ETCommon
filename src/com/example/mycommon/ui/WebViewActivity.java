@@ -54,7 +54,7 @@ public class WebViewActivity extends BaseActivity {
 	}
 
 	@Override
-	public String getTitle(String title) {
+	public String getTitleStr() {
 		return title;
 	}
 }

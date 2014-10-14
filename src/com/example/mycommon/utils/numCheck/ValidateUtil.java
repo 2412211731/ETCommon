@@ -1,4 +1,4 @@
-package com.example.mycommon.utils;
+package com.example.mycommon.utils.numCheck;
 
 import java.util.regex.Pattern;
 
