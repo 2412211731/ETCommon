@@ -15,7 +15,7 @@ public class SearchPreference extends LocalPreference {
 	private final static String name = "search_hisotry";
 
 	public SearchPreference(Context mContext) {
-		super(name, mContext);
+		super(mContext,name);
 	}
 
 	public void add(String q) {

@@ -1,12 +1,15 @@
 package com.example.mycommon.bean;
 
 import com.example.mycommon.R;
-import com.example.mycommon.data.BaseConfigPreference;
+import com.example.mycommon.utils.LocalPreference;
+
 import android.content.Context;
 import android.media.AudioManager;
 import android.media.SoundPool;
 
 public class AppSound {
+	private String APP_SOUND_ENABLE= "app_sound_enable";
+	
 	private static int soundEnable; // 是否开启按键声音
 	private static SoundPool soundPool;
 	private static int[] soundIds;
@@ -22,7 +25,7 @@ public class AppSound {
 				soundPool.load(context, R.raw.sfx_success, 1),// 5
 				soundPool.load(context, R.raw.cartoon, 1),// 6
 		};
-		soundEnable = new BaseConfigPreference(context).getSoundState();
+		soundEnable = LocalPreference.getPreferences(context).getInt(APP_SOUND_ENABLE, 1);
 	}
 
 	public void playSound(int index) {
@@ -39,6 +42,6 @@ public class AppSound {
 	 */
 	public void setSoundState(Context context, int state) {
 		soundEnable = state;
-		new BaseConfigPreference(context).setSoundState(state);
+		LocalPreference.getPreferences(context).setInt(APP_SOUND_ENABLE,state);
 	}
 }
