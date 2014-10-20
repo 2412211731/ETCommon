@@ -24,7 +24,7 @@
         android:label="@string/app_name"
         android:theme="@style/Theme.Sherlock.NoActionBar" >
         <activity
-            android:name="com.example.mycommon.ui.demo.viewpager.MainActivity"
+            android:name="com.example.mycommon.ui.LockActivityDemo"
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:theme="@style/Theme.Sherlock.NoActionBar" >

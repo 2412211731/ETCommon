@@ -5,6 +5,7 @@ import com.example.mycommon.widget.LockView;
 import com.example.mycommon.widget.LockView.OnLockFinishListener;
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Handler;
 import android.widget.Toast;
 
 /**
@@ -26,6 +27,14 @@ public class LockActivityDemo extends Activity {
 			public void finish(StringBuilder lockString) {
 				Toast.makeText(getApplicationContext(), lockString, 2000)
 						.show();
+				mSudokoView.showWrongIcons();
+				new Handler().postDelayed(new Runnable() {
+
+					@Override
+					public void run() {
+						mSudokoView.reset();
+					}
+				}, 2000);
 			}
 		});
 	}
