@@ -3,15 +3,14 @@ package com.example.mycommon.widget;
 import com.example.mycommon.R;
 
 import android.app.Activity;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup.LayoutParams;
 import android.widget.PopupWindow;
 
 public class CommonPopupWindowUtil {
 	/**
-	 * 使用举例：CommonPopupWindowUtil.iniPopupWindow(this,
-	 * R.layout.common_pop,findViewById
-	 * (R.id.titleBar_center_btn).getWidth(),LayoutParams.WRAP_CONTENT);
 	 * 
 	 * @param activity
 	 * @param layoutXml
@@ -20,8 +19,7 @@ public class CommonPopupWindowUtil {
 	 *            可以是 LayoutParams.WRAP_CONTENT 也可以是具体高度
 	 * @return
 	 */
-	public static PopupWindow iniPopupWindow(Activity activity, int layoutXml,
-			int width, int height) {
+	public static PopupWindow iniPopupWindow(Activity activity, int layoutXml, int width, int height) {
 		LayoutInflater inflater = (LayoutInflater) activity
 				.getSystemService(activity.LAYOUT_INFLATER_SERVICE);
 		View layout = inflater.inflate(layoutXml, null);
@@ -41,5 +39,19 @@ public class CommonPopupWindowUtil {
 		pwMyPopWindow.setOutsideTouchable(true);// 触摸popupwindow外部，popupwindow消失。这个要求你的popupwindow要有背景图片才可以成功，如上
 
 		return pwMyPopWindow;
+	}
+	
+	public void show(Activity context){
+//		PopupWindow popupWindow;
+//		if (popupWindow == null) {
+//			popupWindow = CommonPopupWindowUtil.iniPopupWindow(context,
+//					R.layout.black_activity_popup_window, LayoutParams.MATCH_PARENT,
+//					DensityUtils.dipTopx(context, 60));
+//			popupWindow.setOutsideTouchable(false);
+//		}
+//		int[] location = new int[2];
+//		findViewById(R.id.bottomLayout).getLocationOnScreen(location);
+//		popupWindow.showAtLocation(context.findViewById(R.id.bottomLayout), Gravity.NO_GRAVITY,
+//				location[0], location[1] - popupWindow.getHeight());
 	}
 }
